@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #f2f2f2;
+    background-color: #b4b4b4;
 }
 
 .logo img {
@@ -61,7 +61,7 @@ header {
 
 /* Estilos del footer */
 footer {
-    background-color: #f2f2f2;
+    background-color: #b4b4b4;
     padding: 20px;
     text-align: center;
 }
