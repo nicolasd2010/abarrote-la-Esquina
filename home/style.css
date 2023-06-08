@@ -1,0 +1,399 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 0 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cart-icon img {
+    height: 30px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .search-bar {
+        margin-left: auto;
+    }
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info span {
+    display: block;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .logo img {
+        height: 30px;
+    }
+
+    .contact-info {
+        font-size: 14px;
+    }
+}
+
+/* Estilos del slider */
+
+main {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    animation: slide-animation 20s infinite;
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+/* Animación del slider */
+@keyframes slide-animation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+/* Estilos de las tarjetas */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Cambiamos la propiedad para establecer 3 columnas */
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-info {
+    margin-top: 10px;
+}
+
+.card-info h3 {
+    margin: 0;
+}
+
+.price {
+    margin-bottom: 5px;
+}
+
+.discount-price {
+    margin: 5px 0;
+    color: red;
+    font-weight: bold;
+}
+
+.buy-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambiamos a 2 columnas en pantallas más pequeñas */
+    }
+}
+
+
+/* Estilos cuando el cursor se sobrepone */
+.card:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/*estilo 404*/
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.cardsP {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-item .card-info {
+    margin-top: 10px;
+}
+
+.product-item .card-info h3 {
+    margin: 0;
+}
+
+.product-item .price {
+    margin-bottom: 5px;
+}
+
+.product-item .buy-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Efecto de agrandamiento al posicionar el cursor */
+.product-item:hover {
+    transform: scale(1.1);
+}
+
+.tarjetas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-basis: calc(25% - 40px);
+    margin-bottom: 20px;
+}
+
+.tarjeta h2 {
+    margin: 0;
+}
+
+.tarjeta p {
+    margin: 10px 0;
+}
+
+.tarjeta img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta-1 {
+    background-color: #f4f4f4;
+}
+
+.tarjeta-2 {
+    background-color: #ebebeb;
+}
+
+.tarjeta-3 {
+    background-color: #dcdcdc;
+}
+
+.tarjeta-4 {
+    background-color: #cccccc;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .tarjeta {
+        flex-basis: calc(50% - 40px);
+    }
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.question {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.answer {
+    margin: 10px 0 0;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .faq-container {
+        padding: 10px;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+}
