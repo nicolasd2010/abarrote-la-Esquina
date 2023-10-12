@@ -344,15 +344,15 @@ img {
 }
 
 .tarjeta-1 {
-    background-color: #f4f4f4;
+    background-color: #cccccc;
 }
 
 .tarjeta-2 {
-    background-color: #ebebeb;
+    background-color: #cccccc;
 }
 
 .tarjeta-3 {
-    background-color: #dcdcdc;
+    background-color: #cccccc;
 }
 
 .tarjeta-4 {
@@ -397,3 +397,5 @@ img {
         font-size: 18px;
     }
 }
+
+/*Ingresar*/
